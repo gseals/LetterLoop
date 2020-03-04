@@ -11,7 +11,7 @@ namespace LetterLoop
 
             var upper = randomCharacters.ToUpper();
             var lower = randomCharacters.ToLower();
-
+            string finalString = "";
 
             for (var i = 0; i < randomCharacters.Length; i++)
             {
@@ -19,18 +19,16 @@ namespace LetterLoop
                 {
                     if (j == 0)
                     {
-                        Console.Write($"{upper[i]}");
-                        Console.ReadLine();
+                        finalString += upper[i];
                     }
-                    if (j != 0)
+                    else
                     {
-                        Console.Write($"{lower[i]}");
-                        Console.ReadLine();
+                        finalString += lower[i];
                     }
                 }
-
             }
-
+            Console.WriteLine(finalString);
+            Console.Read();
         }
     }
 }
