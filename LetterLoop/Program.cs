@@ -26,13 +26,13 @@ namespace LetterLoop
                         finalString += lower[i];
                     }
                 }
-                if (i < randomCharacters.Length - 1);
+                if (i < randomCharacters.Length - 1)
                 {
                     finalString += "-";
                 }
             }
             Console.WriteLine(finalString);
-            Console.Read();
+            Console.Read(); 
         }
     }
 }
